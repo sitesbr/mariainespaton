@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #5C8C94 0%, #A8BBA3 100%);
         }
         .feature-card {
             transition: all 0.3s ease;
@@ -27,13 +27,13 @@
         }
         @keyframes pulse {
             0% {
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+                box-shadow: 0 0 0 0 rgba(92, 140, 148, 0.7);
             }
             70% {
-                box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+                box-shadow: 0 0 0 10px rgba(92, 140, 148, 0);
             }
             100% {
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+                box-shadow: 0 0 0 0 rgba(92, 140, 148, 0);
             }
         }
         .vr-headset {
@@ -46,7 +46,7 @@
             left: -10px;
             right: -10px;
             bottom: -10px;
-            border: 2px dashed #3b82f6;
+            border: 2px dashed #5C8C94;
             border-radius: 20px;
             animation: rotate 20s linear infinite;
             opacity: 0.5;
@@ -55,6 +55,13 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .review-btn {
+            transition: all 0.3s ease;
+        }
+        .review-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-50">
@@ -62,14 +69,14 @@
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <i class="fas fa-brain text-blue-600 text-3xl mr-3"></i>
-                <span class="text-xl font-bold text-blue-800">Dra. Ana Lúcia</span>
+                <i class="fas fa-brain text-[#5C8C94] text-3xl mr-3"></i>
+                <span class="text-xl font-bold text-[#5F5F5F]">Maria Inês Paton Ramos</span>
             </div>
             <nav class="hidden md:flex space-x-8">
-                <a href="#sobre" class="text-gray-700 hover:text-blue-600 font-medium">Sobre</a>
-                <a href="#tratamentos" class="text-gray-700 hover:text-blue-600 font-medium">Tratamentos</a>
-                <a href="#depoimentos" class="text-gray-700 hover:text-blue-600 font-medium">Depoimentos</a>
-                <a href="#contato" class="text-gray-700 hover:text-blue-600 font-medium">Contato</a>
+                <a href="#sobre" class="text-gray-700 hover:text-[#5C8C94] font-medium">Sobre</a>
+                <a href="#tratamentos" class="text-gray-700 hover:text-[#5C8C94] font-medium">Tratamentos</a>
+                <a href="#depoimentos" class="text-gray-700 hover:text-[#5C8C94] font-medium">Depoimentos</a>
+                <a href="#contato" class="text-gray-700 hover:text-[#5C8C94] font-medium">Contato</a>
             </nav>
             <button class="md:hidden text-gray-700">
                 <i class="fas fa-bars text-2xl"></i>
@@ -87,14 +94,20 @@
                 <p class="text-xl md:text-2xl mb-8 opacity-90">
                     Método baseado em TCC com Tecnologia de Ponta para Resultados Rápidos e Duráveis. Atendimento Personalizado no Tatuapé.
                 </p>
-                <a href="#agendar" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-flex items-center">
-                    QUERO AGENDAR MINHA CONSULTA
-                    <i class="fas fa-arrow-right ml-3"></i>
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5511987654321" class="bg-[#5C8C94] hover:bg-[#4a7178] text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-flex items-center justify-center">
+                        AGENDAR POR WHATSAPP
+                        <i class="fab fa-whatsapp ml-3"></i>
+                    </a>
+                    <a href="#agendar" class="bg-white hover:bg-gray-100 text-[#5C8C94] font-bold py-4 px-8 rounded-full text-lg transition duration-300 inline-flex items-center justify-center">
+                        MAIS INFORMAÇÕES
+                        <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <div class="vr-headset relative p-4">
-                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8cdd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                    <img src="https://i.imgur.com/EJ3YMBN.jpeg&auto=format&fit=crop&w=600&q=80" 
                          alt="Paciente usando realidade virtual" 
                          class="rounded-xl shadow-xl w-full max-w-md">
                 </div>
@@ -106,7 +119,7 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5F5F5F] mb-4">
                     Você já sentiu seu coração acelerar sem motivo?
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -114,40 +127,40 @@
                 </p>
             </div>
             
-            <div class="flex flex-col md:flex-row items-center bg-blue-50 rounded-2xl overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center bg-[#F3ECE7] rounded-2xl overflow-hidden">
                 <div class="md:w-1/2 p-8 md:p-12">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                    <h3 class="text-2xl font-bold text-[#5F5F5F] mb-4">
                         A ansiedade pode paralisar sua vida, mas existe um jeito científico de retomar o controle.
                     </h3>
                     <ul class="space-y-4 mt-6">
                         <li class="flex items-start">
-                            <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-times-circle text-blue-600"></i>
+                            <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                <i class="fas fa-times-circle text-white"></i>
                             </div>
                             <span class="text-gray-700">Preocupações constantes que não te deixam relaxar</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-times-circle text-blue-600"></i>
+                            <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                <i class="fas fa-times-circle text-white"></i>
                             </div>
                             <span class="text-gray-700">Evitar situações por medo de ter crises</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-times-circle text-blue-600"></i>
+                            <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                <i class="fas fa-times-circle text-white"></i>
                             </div>
                             <span class="text-gray-700">Sensação de que está perdendo oportunidades por causa do medo</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-times-circle text-blue-600"></i>
+                            <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                <i class="fas fa-times-circle text-white"></i>
                             </div>
                             <span class="text-gray-700">Dificuldade para dormir pensando em tudo que pode dar errado</span>
                         </li>
                     </ul>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                    <img src="https://i.imgur.com/GCOsWmU.jpeg&auto=format&fit=crop&w=600&q=80" 
                          alt="Pessoa com ansiedade" 
                          class="w-full h-full object-cover">
                 </div>
@@ -159,7 +172,7 @@
     <section class="py-16 bg-gray-50" id="tratamentos">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5F5F5F] mb-4">
                     Uma Abordagem Inovadora para Vencer a Ansiedade
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -170,10 +183,10 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="feature-card bg-white p-8 rounded-xl shadow-md text-center">
-                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-vr-cardboard text-blue-600 text-3xl"></i>
+                    <div class="bg-[#5C8C94] w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-vr-cardboard text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Terapia com Realidade Virtual</h3>
+                    <h3 class="text-xl font-bold text-[#5F5F5F] mb-3">Terapia com Realidade Virtual</h3>
                     <p class="text-gray-600">
                         Exposição gradual e segura a situações de medo (como voar) em um ambiente controlado. Supere suas fobias de forma progressiva e monitorada.
                     </p>
@@ -181,10 +194,10 @@
                 
                 <!-- Feature 2 -->
                 <div class="feature-card bg-white p-8 rounded-xl shadow-md text-center">
-                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heartbeat text-blue-600 text-3xl"></i>
+                    <div class="bg-[#5C8C94] w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Biofeedback Avançado</h3>
+                    <h3 class="text-xl font-bold text-[#5F5F5F] mb-3">Biofeedback Avançado</h3>
                     <p class="text-gray-600">
                         Tecnologia que monitora suas respostas fisiológicas (frequência cardíaca, respiração) para te ajudar a regular a ansiedade em tempo real.
                     </p>
@@ -192,10 +205,10 @@
                 
                 <!-- Feature 3 -->
                 <div class="feature-card bg-white p-8 rounded-xl shadow-md text-center">
-                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-hand-holding-heart text-blue-600 text-3xl"></i>
+                    <div class="bg-[#5C8C94] w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-holding-heart text-white text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Atendimento Humanizado</h3>
+                    <h3 class="text-xl font-bold text-[#5F5F5F] mb-3">Atendimento Humanizado</h3>
                     <p class="text-gray-600">
                         Sessões individuais com abordagem TCC, focadas em suas necessidades específicas. Um plano personalizado para sua recuperação.
                     </p>
@@ -210,37 +223,37 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
-                             alt="Dra. Ana Lúcia" 
-                             class="rounded-full w-64 h-64 object-cover border-4 border-blue-100 shadow-lg">
-                        <div class="absolute -bottom-3 -right-3 bg-blue-600 text-white px-4 py-2 rounded-full font-bold">
+                        <img src="https://i.imgur.com/7ci4NHt.pngg&auto=format&fit=crop&w=600&q=80" 
+                             alt="Maria Inês Paton Ramos" 
+                             class="rounded-full w-64 h-64 object-cover border-4 border-[#A8BBA3] shadow-lg">
+                        <div class="absolute -bottom-3 -right-3 bg-[#5C8C94] text-white px-4 py-2 rounded-full font-bold">
                             <i class="fas fa-check mr-2"></i> Especialista
                         </div>
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Dra. Ana Lúcia Mendes</h2>
+                    <h2 class="text-3xl font-bold text-[#5F5F5F] mb-4">Maria Inês Paton Ramos</h2>
                     <p class="text-xl text-gray-600 mb-6">
                         Especialista em Terapia Cognitivo-Comportamental (TCC) com foco no tratamento de ansiedade e fobias.
                     </p>
                     
-                    <div class="bg-blue-50 rounded-xl p-6 mb-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Formação e Credenciais</h3>
+                    <div class="bg-[#F3ECE7] rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold text-[#5F5F5F] mb-4">Formação e Credenciais</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <i class="fas fa-graduation-cap text-blue-600 mt-1 mr-3"></i>
+                                <i class="fas fa-graduation-cap text-[#5C8C94] mt-1 mr-3"></i>
                                 <span>Especialista em TCC pela CB3C e CETCC</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-user-md text-blue-600 mt-1 mr-3"></i>
+                                <i class="fas fa-user-md text-[#5C8C94] mt-1 mr-3"></i>
                                 <span>Formação avançada em mentes ansiosas com o renomado Dr. Marco Abud</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-briefcase text-blue-600 mt-1 mr-3"></i>
-                                <span>+20 anos de experiência em psicologia clínica e tratamento de ansiedade</span>
+                                <i class="fas fa-briefcase text-[#5C8C94] mt-1 mr-3"></i>
+                                <span>+28 anos de experiência em psicologia clínica e tratamento de ansiedade</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-certificate text-blue-600 mt-1 mr-3"></i>
+                                <i class="fas fa-certificate text-[#5C8C94] mt-1 mr-3"></i>
                                 <span>Certificada em Realidade Virtual e Biofeedback para terapias de alta eficácia</span>
                             </li>
                         </ul>
@@ -258,7 +271,7 @@
     <section class="py-16 bg-gray-50" id="depoimentos">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5F5F5F] mb-4">
                     Transformações Reais
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -266,23 +279,23 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card p-8 rounded-xl shadow-md relative">
-                    <div class="absolute -top-5 -left-5 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                    <div class="absolute -top-5 -left-5 bg-[#5C8C94] text-white w-12 h-12 rounded-full flex items-center justify-center">
                         <i class="fas fa-quote-left text-xl"></i>
                     </div>
                     <div class="flex items-center mb-4">
-                        <div class="bg-blue-100 p-2 rounded-full mr-4">
-                            <i class="fas fa-user text-blue-600"></i>
-                        </div>
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjXrNvjRKzeCRH5Lr-fqkR0M0HBWaSOOcSODaaFzpwNs4G_3rKuf=w54-h54-p-rp-mo-br100" 
+                             alt="Rodrigo Kairys" 
+                             class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Carlos, 42 anos</h4>
-                            <p class="text-sm text-gray-500">Ex-paciente com medo de avião</p>
+                            <h4 class="font-bold text-gray-800">Rodrigo Kairys</h4>
+                            <p class="text-sm text-gray-500">Paciente com depressão</p>
                         </div>
                     </div>
                     <p class="text-gray-700 italic">
-                        "Depois de 3 sessões com a realidade virtual, consegui entrar em um avião pela primeira vez em 10 anos! A Dra. Ana Lúcia me guiou com paciência e profissionalismo em cada etapa. Hoje posso viajar a trabalho sem medo."
+                        "Após 3 meses de consultas com a Dr. Maria Inês, posso reconhecer uma clara melhora em meu quadro de depressão. Ela trabalha pontos específicos, focando nas situações em que precisam ser trabalhadas com um foco incrível. Recomendo muito a Dr. Maria Inês!"
                     </p>
                     <div class="flex mt-4">
                         <i class="fas fa-star text-yellow-400"></i>
@@ -291,24 +304,27 @@
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
+                    <a href="https://maps.app.goo.gl/cjjaHkEGab1ED1zEA" target="_blank" class="mt-4 inline-block text-sm text-[#5C8C94] hover:underline">
+                        Ver avaliação no Google
+                    </a>
                 </div>
                 
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card p-8 rounded-xl shadow-md relative">
-                    <div class="absolute -top-5 -left-5 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                    <div class="absolute -top-5 -left-5 bg-[#5C8C94] text-white w-12 h-12 rounded-full flex items-center justify-center">
                         <i class="fas fa-quote-left text-xl"></i>
                     </div>
                     <div class="flex items-center mb-4">
-                        <div class="bg-blue-100 p-2 rounded-full mr-4">
-                            <i class="fas fa-user text-blue-600"></i>
-                        </div>
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjXtaaT4Q-gtEOGiYuTzYLifKNbRb0lPYadu09PedkLk1fiLf3JJ7Q=w54-h54-p-rp-mo-br100" 
+                             alt="Fernanda Ferreira" 
+                             class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold text-gray-800">Fernanda, 35 anos</h4>
-                            <p class="text-sm text-gray-500">Ex-paciente com ansiedade generalizada</p>
+                            <h4 class="font-bold text-gray-800">Fernanda Ferreira</h4>
+                            <p class="text-sm text-gray-500">Ex-paciente</p>
                         </div>
                     </div>
                     <p class="text-gray-700 italic">
-                        "Finalmente entendi como controlar minha ansiedade. A terapia mudou minha vida! O biofeedback me mostrou em tempo real como meu corpo reage e como posso me acalmar. Recomendo a todos que sofrem como eu sofria."
+                        "A Maria Ines é uma ótima profissional. No tempo que estive com ela, pude perceber o quanto se dedica e se empenha em dar ao paciente ferramentas que ajudem a suprir suas queixas, a descobrir e mudar comportamentos, a evoluir como pessoa. Sou muito grata pelos resultados que tivemos!"
                     </p>
                     <div class="flex mt-4">
                         <i class="fas fa-star text-yellow-400"></i>
@@ -317,52 +333,127 @@
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
+                    <a href="https://maps.app.goo.gl/zK37hRK1sAERCtYo7" target="_blank" class="mt-4 inline-block text-sm text-[#5C8C94] hover:underline">
+                        Ver avaliação no Google
+                    </a>
                 </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-xl shadow-md relative">
+                    <div class="absolute -top-5 -left-5 bg-[#5C8C94] text-white w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-xl"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjWRp7Fl12ay3JtI619oTRPIwjGe8vzZNwiIohJnRI3H92GAsFSBNw=w54-h54-p-rp-mo-ba2-br100" 
+                             alt="Valéria Márcia" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Valéria Márcia</h4>
+                            <p class="text-sm text-gray-500">Ex-paciente</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Eu não tenho palavras para qualificar essa profissional Gigante que e Maria Inês, eu estava no fundo do poço e ela simplesmente me ajudou muito a voltar a ver a luz, recuperar a o amor próprio e ajudar a me conhecer melhor. Hoje aqui estou para deixar meu testemunho e dizer que eu não acreditava na terapia até conhecer essa profissional maravilhosa. Obrigada Maria Inês."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <a href="https://maps.app.goo.gl/PVDze8Kaod8kUEYC7" target="_blank" class="mt-4 inline-block text-sm text-[#5C8C94] hover:underline">
+                        Ver avaliação no Google
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Google Reviews CTA -->
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold text-[#5F5F5F] mb-4">Veja todas as avaliações no Google</h3>
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Mais de 50 pacientes já compartilharam suas experiências positivas com a terapia
+                </p>
+                <a href="https://www.google.com/search?q=Psic%C3%B3loga+Cognitivo+Comportamental+Maria+In%C3%AAs+Paton+Ramos&sca_esv=4afcdae329e95b07&hl=pt-BR&ei=iXojaMDEKe7T1sQPobOU2Ao&ved=0ahUKEwiArZ3k9aCNAxXuqZUCHaEZBasQ4dUDCBA&oq=Psic%C3%B3loga+Cognitivo+Comportamental+Maria+In%C3%AAs+Paton+Ramos&gs_lp=Egxnd3Mtd2l6LXNlcnAiO1BzaWPDs2xvZ2EgQ29nbml0aXZvIENvbXBvcnRhbWVudGFsIE1hcmlhIEluw6pzIFBhdG9uIFJhbW9zMg4QLhiABBjHARiOBRivATICECYyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMh0QLhiABBjHARiOBRivARiXBRjcBBjeBBjgBNgBAUiFIlCCFViCFXAEeACQAQCYAXSgAXSqAQMwLjG4AQzIAQD4AQL4AQGYAgWgAoMBwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBJgDAOIDBRIBMSBAiAYBkAYFugYGCAEQARgUkgcDNC4xoAeiCLIHAzAuMbgHeg&sclient=gws-wiz-serp#lrd=0x94ce5eeb5fa44e27:0x1310012a5ba02a6c,1,,,,&topic=mid:/g/120p4rbg" 
+                   target="_blank" 
+                   class="review-btn bg-[#5C8C94] hover:bg-[#4a7178] text-white font-bold py-3 px-6 rounded-lg inline-flex items-center">
+                    <i class="fab fa-google mr-2"></i> Ver todas as avaliações
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5F5F5F] mb-4">
+                    Nosso Consultório no Tatuapé
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ambiente acolhedor e equipado com tecnologia para seu tratamento
+                </p>
+            </div>
+            
+            <div class="rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122569257634!2d-46.5758239240066!3d-23.52891567882588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eeb5fa44e27%3A0x1310012a5ba02a6c!2sMaria%20In%C3%AAs%20Paton%20Ramos%20-%20Psic%C3%B3loga%20Cognitivo%20Comportamental!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-blue-600 text-white" id="agendar">
+    <section class="py-16 bg-[#5C8C94] text-white" id="agendar">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Agende Sua Sessão Experimental por R$150
+                Agende sua Sessão Inicial no Tatuapé
             </h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">
-                Vagas limitadas para atendimentos no Tatuapé. Garanta seu horário agora!
+               
+                Garanta seu horário e descubra como a terapia com realidade virtual pode transformar sua relação com a ansiedade e o medo.
             </p>
             
             <div class="max-w-md mx-auto bg-white rounded-xl shadow-xl overflow-hidden mb-8">
-                <div class="bg-blue-700 py-4 px-6">
-                    <h3 class="font-bold text-xl text-white">Sessão Inicial</h3>
+                <div class="bg-[#4a7178] py-4 px-6">
+                    <h3 class="font-bold text-xl text-white">Vagas limitadas para atendimentos presenciais.</h3>
                 </div>
                 <div class="p-6 text-gray-800">
-                    <div class="text-4xl font-bold text-blue-600 mb-4">R$150</div>
+                    <div class="text-4xl font-bold text-[#5C8C94] mb-4">Sessão Inicial</div>
                     <ul class="space-y-3 mb-6">
                         <li class="flex items-center">
                             <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span>Avaliação completa</span>
+                            <span>Avaliação individualizada</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span>Demonstração da realidade virtual</span>
+                            <span>Demonstração prática da realidade virtual</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span>Plano de tratamento personalizado</span>
+                            <span>Plano terapêutico personalizado</span>
                         </li>
                     </ul>
-                    <a href="#" class="cta-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-block">
-                        QUERO AGENDAR
-                    </a>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://wa.me/5511987654321" class="cta-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/dranalucia.psico" target="_blank" class="bg-[#E1306C] hover:bg-[#C13584] text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 inline-flex items-center justify-center">
+                            <i class="fab fa-instagram mr-2"></i> Seguir no Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="bg-blue-700 bg-opacity-30 rounded-xl p-6 inline-block">
+            <div class="bg-[#4a7178] bg-opacity-70 rounded-xl p-6 inline-block">
                 <div class="flex items-center">
                     <i class="fas fa-shield-alt text-2xl mr-4"></i>
                     <span class="text-lg">
-                        <strong>Garantia:</strong> Se após a primeira sessão você não sentir que o método é para você, devolvemos 100% do valor.
+                        <strong>Garantia:</strong> Atendimento humanizado, com abordagem baseada em evidências científicas e tecnologias avançadas para regulação emocional.
                     </span>
                 </div>
             </div>
@@ -373,7 +464,7 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5F5F5F] mb-4">
                     Perguntas Frequentes
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -385,8 +476,8 @@
                 <!-- FAQ Item 1 -->
                 <div class="mb-6 border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left group">
-                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">A realidade virtual é segura?</h3>
-                        <i class="fas fa-chevron-down text-blue-600 transition-transform transform group-hover:rotate-180"></i>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] group-hover:text-[#5C8C94] transition">A realidade virtual é segura?</h3>
+                        <i class="fas fa-chevron-down text-[#5C8C94] transition-transform transform group-hover:rotate-180"></i>
                     </button>
                     <div class="mt-4 text-gray-700">
                         <p>Sim! Todas as sessões são supervisionadas por uma profissional especializada. O equipamento é de última geração e as experiências são cuidadosamente selecionadas para cada paciente, com progressão gradual de acordo com sua evolução.</p>
@@ -396,8 +487,8 @@
                 <!-- FAQ Item 2 -->
                 <div class="mb-6 border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left group">
-                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Quantas sessões são necessárias?</h3>
-                        <i class="fas fa-chevron-down text-blue-600 transition-transform transform group-hover:rotate-180"></i>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] group-hover:text-[#5C8C94] transition">Quantas sessões são necessárias?</h3>
+                        <i class="fas fa-chevron-down text-[#5C8C94] transition-transform transform group-hover:rotate-180"></i>
                     </button>
                     <div class="mt-4 text-gray-700">
                         <p>O plano é personalizado para cada paciente, mas muitos pacientes veem resultados significativos em 8 a 12 sessões. Casos mais complexos podem requerer um período maior de tratamento.</p>
@@ -407,8 +498,8 @@
                 <!-- FAQ Item 3 -->
                 <div class="mb-6 border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left group">
-                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">O biofeedback causa desconforto?</h3>
-                        <i class="fas fa-chevron-down text-blue-600 transition-transform transform group-hover:rotate-180"></i>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] group-hover:text-[#5C8C94] transition">O biofeedback causa desconforto?</h3>
+                        <i class="fas fa-chevron-down text-[#5C8C94] transition-transform transform group-hover:rotate-180"></i>
                     </button>
                     <div class="mt-4 text-gray-700">
                         <p>Não, é um método totalmente não invasivo. Sensores discretos monitoram suas respostas fisiológicas sem causar qualquer desconforto. É como usar um relógio inteligente, porém com tecnologia médica mais precisa.</p>
@@ -418,8 +509,8 @@
                 <!-- FAQ Item 4 -->
                 <div class="mb-6 border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left group">
-                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Preciso parar meus remédios para fazer a terapia?</h3>
-                        <i class="fas fa-chevron-down text-blue-600 transition-transform transform group-hover:rotate-180"></i>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] group-hover:text-[#5C8C94] transition">Preciso parar meus remédios para fazer a terapia?</h3>
+                        <i class="fas fa-chevron-down text-[#5C8C94] transition-transform transform group-hover:rotate-180"></i>
                     </button>
                     <div class="mt-4 text-gray-700">
                         <p>Não necessariamente. A terapia pode ser complementar ao tratamento medicamentoso. Durante a avaliação inicial, discutiremos seu caso específico e, se necessário, faremos o acompanhamento em conjunto com seu psiquiatra.</p>
@@ -429,11 +520,11 @@
                 <!-- FAQ Item 5 -->
                 <div class="mb-6">
                     <button class="flex justify-between items-center w-full text-left group">
-                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">O consultório é acessível?</h3>
-                        <i class="fas fa-chevron-down text-blue-600 transition-transform transform group-hover:rotate-180"></i>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] group-hover:text-[#5C8C94] transition">O consultório é acessível?</h3>
+                        <i class="fas fa-chevron-down text-[#5C8C94] transition-transform transform group-hover:rotate-180"></i>
                     </button>
                     <div class="mt-4 text-gray-700">
-                        <p>Sim, nosso consultório no Tatuapé possui fácil acesso, próximo à estação de metrô e com estacionamento conveniado. O espaço foi projetado para ser acolhedor e acessível a todos.</p>
+                        <p>Sim, nosso consultório no Tatuapé possui fácil acesso, próximo à estação de metrô e com estacionamento conveniado. O espaço foi projetado para ser acolhedor acessível a todos.</p>
                     </div>
                 </div>
             </div>
@@ -445,110 +536,111 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                    <h2 class="text-3xl font-bold text-[#5F5F5F] mb-6">Entre em Contato</h2>
                     
                     <div class="bg-white rounded-xl shadow-md p-6 mb-8">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Informações de Contato</h3>
+                        <h3 class="text-xl font-bold text-[#5F5F5F] mb-4">Informações de Contato</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-800">Endereço</h4>
-                                    <p class="text-gray-600">Rua Tuiuti, 123 - Tatuapé, São Paulo - SP</p>
+                                    <h4 class="font-bold text-gray-800">Endereço:</h4>
+                                    <p class="text-gray-600">R. Itapura, 300 - conjunto 1503 - Vila Gomes Cardim, São Paulo - SP, 03310-000</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-800">Telefone</h4>
+                                    <h4 class="font-bold text-gray-800">Telefone:</h4>
                                     <p class="text-gray-600">(11) 98765-4321</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-blue-600"></i>
+                                <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-800">Email</h4>
-                                    <p class="text-gray-600">contato@dranalucia.com.br</p>
+                                    <h4 class="font-bold text-gray-800">Email:</h4>
+                                    <p class="text-gray-600">mariaines.psicologa@gmail.com</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                    <i class="fab fa-instagram text-blue-600"></i>
+                                <div class="bg-[#A8BBA3] p-2 rounded-full mr-4">
+                                    <i class="fab fa-instagram text-white"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-800">Instagram</h4>
-                                    <p class="text-gray-600">@dranalucia.psico</p>
+                                    <h4 class="font-bold text-gray-800">Instagram:</h4>
+                                    <p class="text-gray-600">@psicologamariainespaton</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
+                        <a href="https://wa.me/5511987654321" class="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition">
                             <i class="fab fa-whatsapp text-xl"></i>
                         </a>
-                        <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition">
+                        <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
                             <i class="fab fa-facebook-f text-xl"></i>
                         </a>
-                        <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition">
+                        <a href="https://www.instagram.com/psicologamariainespaton" target="_blank" class="bg-[#E1306C] text-white p-3 rounded-full hover:bg-[#C13584] transition">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div class="md:w-1/2 md:pl-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Agende sua Consulta</h2>
-                    <form class="bg-white rounded-xl shadow-md p-6">
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="name">Nome Completo</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <h2 class="text-3xl font-bold text-[#5F5F5F] mb-6">Horário de Atendimento</h2>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex justify-between items-center pb-2 border-b border-gray-100">
+                                <span class="font-medium">Segunda a Sexta</span>
+                                <span class="text-gray-600">08:00 - 19:00</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-2 border-b border-gray-100">
+                                <span class="font-medium">Sábado</span>
+                                <span class="text-gray-600">09:00 - 13:00</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="font-medium">Domingo</span>
+                                <span class="text-gray-600">Fechado</span>
+                            </li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-bold text-[#5F5F5F] mb-4">Agendamento Rápido</h3>
+                        <div class="flex flex-col gap-3">
+                            <a href="https://wa.me/5511987654321" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 inline-flex items-center justify-center">
+                                <i class="fab fa-whatsapp mr-2"></i> WHATSAPP
+                            </a>
+                            <a href="tel:+5511987654321" class="bg-[#5C8C94] hover:bg-[#4a7178] text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 inline-flex items-center justify-center">
+                                <i class="fas fa-phone-alt mr-2"></i> LIGAR AGORA
+                            </a>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="phone">Telefone</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="date">Data Preferencial</label>
-                            <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="message">Mensagem (Opcional)</label>
-                            <textarea id="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
-                            ENVIAR AGENDAMENTO
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-8">
+    <footer class="bg-[#5F5F5F] text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <div class="flex items-center">
-                        <i class="fas fa-brain text-blue-300 text-2xl mr-3"></i>
-                        <span class="text-xl font-bold">Dra. Ana Lúcia</span>
+                        <i class="fas fa-brain text-[#A8BBA3] text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Maria Inês Paton Ramos</span>
                     </div>
-                    <p class="text-blue-300 mt-2">Psicóloga Clínica | Especialista em TCC</p>
+                    <p class="text-[#A8BBA3] mt-2">Psicóloga Clínica | Especialista em TCC</p>
                 </div>
                 
                 <div class="text-center md:text-right">
-                    <p class="text-blue-300">© 2023 Dra. Ana Lúcia Mendes. Todos os direitos reservados.</p>
-                    <p class="text-blue-300 mt-1">CRP 06/12345</p>
+                    <p class="text-[#A8BBA3]">© 2025 Maria Inês Paton Ramos. Todos os direitos reservados. </p>
+                    <p class="text-[#A8BBA3] mt-1">CRP 06/12345</p>
                 </div>
             </div>
         </div>
@@ -556,7 +648,7 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="#" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-110">
+        <a href="https://wa.me/5511987654321" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-transform transform hover:scale-110">
             <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </div>
