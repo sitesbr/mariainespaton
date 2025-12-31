@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Maria Inês Paton - Psicóloga TCC | Terapia para Ansiedade Online</title>
+    
+    <meta name="description" content="Psicóloga especialista em Terapia Cognitivo Comportamental. Atendimento online com Realidade Virtual e Biofeedback. Agende sua consulta e recupere seu bem-estar emocional.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maria Inês Paton - Psicóloga TCC">
+    <meta property="og:description" content="Especialista em Ansiedade, Realidade Virtual e Biofeedback. Agende sua consulta.">
+    <meta property="og:image" content="https://i.imgur.com/5XE20fa.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="icon" href="https://i.imgur.com/7ci4NHt-32-32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#5C8C94',
+                            tealDark: '#416268',
+                            cream: '#F9F7F2',
+                            sage: '#A8BBA3',
+                            text: '#2D3748'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F9F7F2;
+            background-image: radial-gradient(#A8BBA3 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid white;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(92, 140, 148, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center py-10 px-4">
+
+    <div class="glass-card w-full max-w-md rounded-3xl shadow-xl overflow-hidden relative animate-fade-in">
+        
+        <div class="relative pt-10 pb-6 px-6 text-center">
+            <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-r from-brand-sage to-brand-teal opacity-20"></div>
+            
+            <div class="relative inline-block mb-4">
+                <div class="absolute inset-0 bg-brand-teal rounded-full blur-md opacity-30 transform translate-y-2"></div>
+                <img src="https://i.imgur.com/5XE20fa.jpeg" 
+                     alt="Maria Inês Paton" 
+                     class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover relative z-10 mx-auto">
+                <div class="absolute bottom-1 right-1 bg-green-500 border-2 border-white w-6 h-6 rounded-full z-20" title="Online Agora"></div>
+            </div>
+
+            <h1 class="font-serif text-2xl font-bold text-brand-text mb-1">
+                Maria Inês Paton
+            </h1>
+            <p class="text-sm text-brand-teal font-bold tracking-wide uppercase mb-2">Psicóloga CRP 06/48803-2</p>
+            
+            <p class="text-brand-text opacity-80 text-sm">
+                Terapia Cognitivo Comportamental <br> Bem-Estar e Saúde Emocional
+            </p>
+        </div>
+
+        <div class="px-8 mb-8 text-center animate-slide-up" style="animation-delay: 0.1s;">
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Olá! Ajudo pessoas a superarem ansiedade e estresse. Utilizo tecnologias inovadoras como <span class="font-bold text-brand-teal">Realidade Virtual</span> e <span class="font-bold text-brand-teal">Biofeedback</span> para potencializar seus resultados. Atendimento online com conforto.
+            </p>
+        </div>
+
+        <div class="px-6 pb-8 space-y-3 animate-slide-up" style="animation-delay: 0.2s;">
+            
+            <a href="https://wa.me/5511985184639" class="btn-hover flex items-center justify-center w-full bg-brand-teal hover:bg-brand-tealDark text-white font-bold py-4 rounded-xl shadow-lg transition-colors group">
+                <i class="fab fa-whatsapp text-2xl mr-3 group-hover:scale-110 transition-transform"></i>
+                Fale comigo no WhatsApp
+            </a>
+
+            <a href="https://wa.me/5511985184639?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." class="btn-hover flex items-center justify-center w-full bg-white border border-brand-teal text-brand-teal font-bold py-3.5 rounded-xl hover:bg-brand-teal/5 transition-colors">
+                <i class="far fa-calendar-check text-xl mr-3"></i>
+                Agende sua consulta
+            </a>
+
+            <a href="#depoimentos" onclick="window.location.href='https://psicologamariainespaton.com.br/#depoimentos'" class="btn-hover flex items-center justify-center w-full bg-white text-gray-700 font-medium py-3.5 rounded-xl shadow-sm border border-gray-100">
+                <i class="fas fa-star text-yellow-400 mr-3"></i>
+                Veja depoimentos reais
+            </a>
+
+            <a href="https://psicologamariainespaton.com.br" class="btn-hover flex items-center justify-center w-full bg-white text-gray-700 font-medium py-3.5 rounded-xl shadow-sm border border-gray-100">
+                <i class="fas fa-globe text-brand-sage mr-3"></i>
+                Conheça meus serviços
+            </a>
+
+            <a href="https://www.instagram.com/psicologamariainespaton" class="btn-hover flex items-center justify-center w-full bg-white text-gray-700 font-medium py-3.5 rounded-xl shadow-sm border border-gray-100">
+                <i class="fab fa-instagram text-pink-600 text-xl mr-3"></i>
+                Me siga no Instagram
+            </a>
+
+            <div class="grid grid-cols-3 gap-3 pt-2">
+                <button onclick="downloadVCard()" class="flex flex-col items-center justify-center bg-gray-50 p-3 rounded-xl hover:bg-gray-100 transition btn-hover border border-gray-200">
+                    <i class="fas fa-user-plus text-gray-600 mb-1"></i>
+                    <span class="text-xs text-gray-600 font-medium">Salvar</span>
+                </button>
+
+                <a href="tel:+5511985184639" class="flex flex-col items-center justify-center bg-gray-50 p-3 rounded-xl hover:bg-gray-100 transition btn-hover border border-gray-200">
+                    <i class="fas fa-phone text-gray-600 mb-1"></i>
+                    <span class="text-xs text-gray-600 font-medium">Ligar</span>
+                </a>
+
+                <button onclick="shareCard()" class="flex flex-col items-center justify-center bg-gray-50 p-3 rounded-xl hover:bg-gray-100 transition btn-hover border border-gray-200">
+                    <i class="fas fa-share-nodes text-gray-600 mb-1"></i>
+                    <span class="text-xs text-gray-600 font-medium">Enviar</span>
+                </button>
+            </div>
+
+            <div class="mt-6 border-t border-gray-200 pt-4">
+                <button onclick="toggleInfo()" class="flex items-center justify-between w-full text-brand-text text-sm font-bold focus:outline-none group">
+                    <span>💡 Diferenciais e Especialidades</span>
+                    <i id="chevron" class="fas fa-chevron-down transition-transform group-hover:text-brand-teal"></i>
+                </button>
+                <div id="more-info" class="hidden mt-3 text-sm text-gray-600 bg-brand-cream/50 p-4 rounded-xl">
+                    <p class="font-bold text-brand-teal mb-2">🎯 Atendo casos de:</p>
+                    <ul class="space-y-1 mb-4 list-disc list-inside opacity-90">
+                        <li>Ansiedade e síndrome do pânico</li>
+                        <li>Estresse e esgotamento</li>
+                        <li>Fobias e medos</li>
+                        <li>Autoestima e autoconfiança</li>
+                    </ul>
+                    <p class="font-bold text-brand-teal mb-2">✨ Diferenciais:</p>
+                    <ul class="space-y-1 list-disc list-inside opacity-90">
+                        <li>Realidade Virtual aplicada à terapia</li>
+                        <li>Biofeedback para controle emocional</li>
+                        <li>Atendimento 100% online e seguro</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-gray-50 py-4 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400">© 2025 Maria Inês Paton</p>
+        </div>
+    </div>
+
+    <script>
+        // Função para Expandir/Recolher Texto Complementar
+        function toggleInfo() {
+            const content = document.getElementById('more-info');
+            const chevron = document.getElementById('chevron');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                content.classList.add('block');
+                chevron.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Função para Compartilhar (Nativo do Celular)
+        async function shareCard() {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'Maria Inês Paton - Psicóloga TCC',
+                        text: 'Olá! Conheça o trabalho da Psicóloga Maria Inês Paton. Especialista em Ansiedade com Realidade Virtual.',
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    console.log('Erro ao compartilhar', err);
+                }
+            } else {
+                // Fallback: Copiar para área de transferência
+                navigator.clipboard.writeText(window.location.href);
+                alert('Link copiado para a área de transferência!');
+            }
+        }
+
+        // Função para Gerar e Baixar VCard (Salvar Contato)
+        function downloadVCard() {
+            // Dados do VCard
+            const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Psicóloga Maria Inês Paton
+N:Paton;Maria Inês;;Psicóloga;
+ORG:Consultório de Psicologia
+TITLE:Especialista em TCC e Realidade Virtual
+TEL;TYPE=CELL:+5511985184639
+EMAIL:mariaines.psicologa@gmail.com
+URL:https://psicologamariainespaton.com.br
+NOTE:Especialista em Ansiedade, Pânico e Fobias.
+END:VCARD`;
+
+            const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'Contato_Psicologa_MariaInes.vcf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
